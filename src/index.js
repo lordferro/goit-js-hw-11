@@ -13,8 +13,8 @@ const refs = {
   form: document.querySelector('.search-form'),
   gallery: document.querySelector('.gallery'),
 };
-const pictureApi = new PictureApi();
 
+const pictureApi = new PictureApi();
 refs.form.addEventListener('submit', onFormSubmit);
 loadMoreBtn.button.addEventListener('click', fetchMoreData);
 
