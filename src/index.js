@@ -6,7 +6,6 @@ import SimpleLightbox from 'simplelightbox';
 // Дополнительный импорт стилей
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import 'simplelightbox/dist/simple-lightbox.min.js';
-import InfiniteScroll from 'infinite-scroll';
 
 var throttle = require('lodash.throttle');
 
@@ -15,10 +14,6 @@ const refs = {
   gallery: document.querySelector('.gallery'),
 };
 const pictureApi = new PictureApi();
-
-// let infScroll = new InfiniteScroll(refs.gallery, {
-//   path: 
-// })
 
 refs.form.addEventListener('submit', onFormSubmit);
 loadMoreBtn.button.addEventListener('click', fetchMoreData);
